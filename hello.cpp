@@ -20,7 +20,7 @@ int main()
 
  return 0;
 }
-*/
+
 
 int main()
 {
@@ -33,5 +33,24 @@ int main()
     cout<<"El Area del ciculo es: "<<area<<endl;
 
     return 0;
+
+}
+*/
+
+int main()
+{
+    int h=0;
+    string x="********";
+    string y="*      *";
+    cout<< x <<endl;
+    while (h<=7){
+
+        cout<<y<<endl;
+    h=h+1;
+    }
+
+    return 0;
+
+
 
 }
