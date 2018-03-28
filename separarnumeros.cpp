@@ -15,3 +15,17 @@ int main()
         cout<<e<<" "<<d<<" "<<c<<" "<<b<<" "<<a;
         return 0;
 }
+
+otra forma:
+
+int main()
+{
+    int x;
+    cin>>x;
+    for(int i=10000;i>=1;i=i/10){
+        int tmp=x/i;
+        cout << tmp<<" ";
+        x=x%i;
+    }
+
+}
