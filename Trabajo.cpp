@@ -148,11 +148,54 @@ int main()
 
 
 //Problema 6
+
+
+
+
 //Problema 7
+
+int main()
+{
+	int a,d,b=10000;
+	cout<<"Ingrese un numero de 5 digitos: "<<endl;
+	cin>>a;
+	while(b>=0){
+		d=a/b;
+		cout<<d<<"	";
+		a=a%b;
+		b=b/10;
+	}
+	return 0;
+	}
+	
+	
+
+
+
 //Problema 8
+
+int main(){
+	int c,a,d,b=10000,m=0;
+	cout<<"Ingrese un numero de 5 digitos: "<<endl;
+	cin>>c;
+	a=c;
+	while(a>=1){
+		d=a%10;
+		m=m+(d*b);
+		b=b/10;
+		a=a/10;}
+	if(c==m){
+		cout<<c<<" Es un numero Palindrome"<<endl;
+	}
+	else{
+		cout<<c<<" No es un numero palindrome"<<endl;
+	}
+	
+}
 
 
 //Problema 9
+	
 int main(){
       int a;
       cout<<"Ingresa anio"<<endl;
@@ -167,9 +210,26 @@ int main(){
 }
 
 
-
-//Problema 10
 */
+//Problema 10
+//Factorial
+int main()
+{
+	
+
+	int a,b,c;
+	cout<<"Ingrese un numero: "<<endl;
+	cin>>a;
+	c=a;
+	for(int i=1;i<c;i++){
+		a=a*i;
+	}
+	cout<<"El factorial es: "<<a;
+	return 0;
+	
+}
+
+
 
 
 
