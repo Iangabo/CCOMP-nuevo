@@ -171,19 +171,7 @@ int main(){
 //Problema 10
 */
 
-//Problema 10
-int main()
-{
-  int num;
-  cout << "Ingrese un numero: " ;
-  cin >> num;
-  cout << "El factorial  " << num << " es: ";
-  int acumula=1;
-  for( num > 0; acumula *= num--);
-  cout << acumula;
-  return 0;
 
-}
 
 
 
