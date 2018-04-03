@@ -179,7 +179,7 @@ int main()
   cin >> num;
   cout << "El factorial  " << num << " es: ";
   int acumula=1;
-  for(; num > 0; acumula *= num--);
+  for( num > 0; acumula *= num--);
   cout << acumula;
   return 0;
 
