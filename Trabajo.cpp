@@ -135,15 +135,25 @@ int main()
 
 int main()
 {
-    cout <<"Ingrese un numero"<< endl ;
-    int x;
-    cin >>x;
-        if(x%2!=0 && x%3!=0 && x%5!=0 && x%7!=0 )
-            cout <<"Si es primo" << endl ;
-        else
-            cout <<"No es primo" << endl ;
+    int a;
+    int b=1;
+    cout<<"Ingrese un numero: "<<endl;
+    cin>>a;
+
+    for(int i=0;i<=a;i++){
+            b++;
+            if(i%b){
+                cout<<"es primo"<<endl;
+                break;
+            }
+            else {
+                cout<<"no primo"<<endl;
+                break;
+
+            }
+    }
     return 0;
-}
+
 
 
 
