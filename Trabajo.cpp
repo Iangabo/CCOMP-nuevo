@@ -1,46 +1,42 @@
 #include <iostream>
 
 using namespace std;
-/*
 
+/*
 //Problema 1:
+
+bool esMayor(int edad){
+return (edad<=18) ? cout<<"Es menor de edad":"Es mayor de edad";
+
+}
 int main()
 {
-    int a;
-    cout<<"Ingrese su edad: "<<endl;
-    cin>>a;
-
-    if (a<18){
-        cout<<"Usted es menor de edad"<<endl;
-
-    }
-    else {
-        cout<<"Usted es mayor de edad"<<endl;
-    }
-    return 0;
+    esMayor(12);
 }
+
 
 //Problema 2
-int main()
+int num(int n)
 {
-    int n;
     int a=0;
-    cout<<"Ingrese un numero: "<<endl;
-    cin>>n;
-
-
     while (a!=n)
-        {
-            cout<<a<<",";
-            a++;
-            if (a==n){
-                cout<<a;
-                break;
-            }
-    return 0;
+    {
+        cout<<a<<",";
+        a++;
+        if (a==n){
+            cout<<a;
+            break;
+        }
+    }
 }
 
+int main()
+{
+    num(11);
 
+}
+
+*/
 //Problema 3
 int main (){
 
@@ -91,8 +87,7 @@ int main (){
  return 0;
  }
 }
-
-
+/*
 //Problema 4
 
 int main()
@@ -132,13 +127,9 @@ int main()
 
 
 //Problema 5
-
-int main()
+int primo(int a)
 {
-    int a;
-    int b=1;
-    cout<<"Ingrese un numero: "<<endl;
-    cin>>a;
+     int b=1;
 
     for(int i=0;i<=a;i++){
             b++;
@@ -154,6 +145,13 @@ int main()
     }
     return 0;
 
+}
+int main()
+{
+    primo(15);
+}
+
+
 
 
 
@@ -163,31 +161,37 @@ int main()
 
 
 //Problema 7
-
-int main()
+int separacion(int a)
 {
-	int a,d,b=10000;
-	cout<<"Ingrese un numero de 5 digitos: "<<endl;
-	cin>>a;
+    int d,b=10000;
 	while(b>=0){
-		d=a/b;
+		int b,c;
+	c=a;
+	for(int i=1;i<c;i++){
+		a=a*i;
+	}
+	cout<<"El factorial es: "<<a;
+	return 0;
+	d=a/b;
 		cout<<d<<"	";
 		a=a%b;
 		b=b/10;
 	}
 	return 0;
-	}
-	
-	
+}
+int main()
+{
+	separacion(12345);
+}
+
+
 
 
 
 //Problema 8
-
-int main(){
-	int c,a,d,b=10000,m=0;
-	cout<<"Ingrese un numero de 5 digitos: "<<endl;
-	cin>>c;
+int Palindrome(int c)
+{
+    int a,d,b=10000,m=0;
 	a=c;
 	while(a>=1){
 		d=a%10;
@@ -200,16 +204,17 @@ int main(){
 	else{
 		cout<<c<<" No es un numero palindrome"<<endl;
 	}
-	
+}
+int main()
+{
+	Palindrome(12321);
+
 }
 
 
 //Problema 9
-	
-int main(){
-      int a;
-      cout<<"Ingresa anio"<<endl;
-      cin>>a;
+int anio(int a)
+{
      if(a % 4 == 0 && (a % 100 != 0 || a % 400 == 0)){
          cout<<"El anio "<<a<<"es bisiesto ";
      }else{
@@ -218,28 +223,34 @@ int main(){
       return 0;
 
 }
-
-
-*/
-//Problema 10
-//Factorial
 int main()
 {
-	
+        anio(1456);
+}
 
-	int a,b,c;
-	cout<<"Ingrese un numero: "<<endl;
-	cin>>a;
+
+
+//Problema 10
+//Factorial
+int factorial(int a)
+{
+    int b,c;
 	c=a;
 	for(int i=1;i<c;i++){
 		a=a*i;
 	}
 	cout<<"El factorial es: "<<a;
 	return 0;
-	
+
+}
+int main()
+{
+
+    factorial(3);
 }
 
 
+*/
 
 
 
