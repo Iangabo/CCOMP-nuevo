@@ -28,55 +28,50 @@ int sumaRecursiva(int array[],int largo)
 }
 
 //pregunta 2
-int invertir(int largo,int array[]){
-    int a;
+void invertir(int largo,int array[]){
+
     for(int i=0; i < largo/2; i++){
       int a = array[i];
-      array[i] = array [largo - i];
-      array[largo - i] =a;
+      array[i] = array [largo - i-1];
+      array[largo - i-1] =a;
     }
-    return a;
+
 }
 
 //pregunta 3
 
 int tamanio(char array[])
 {
-
-    for(int i=0;array[i]==i;i++){
-        cout<<i<<endl;
+    int cont=0;
+    for(int i=0;array[i]!='\0';i++){
+        cont++;
     }
-
+    return cont;
 }
 
 int main()
 {
-    //pregunta 1
-    //iterativa
+pregunta 1
+iterativa
     int arr[]={1,2,3,4,5,6,7};
-    cout<<"La suma es: "<<suma(arr,7)<<endl;
+  cout<<"La suma es: "<<suma(arr,7)<<endl;
     return 0;
     //recursiva
 
     int array[]={1,2,3,4,5,6,7};
     cout<<sumaRecursiva(array,7);
     //pregunta2
-    int array[]={1,2,3,4,5};
-    cout<<invertir(5,array);
-    return 0;
+   int array[]={1,2,3,4,5};
+    invertir(5,array);
+    for(int i=0;i<5;i++){
+       cout<<array[i]<<" ";
+       }
+   return 0;
 
     //pregunta 3
-    char array[]={1,2,3,4,5};
-    tamanio(array);
-    return 0;
+
+
+    cout<< tamanio("iangabo");
+
 
 }
-
-
-
-
-
-
-
-
-
