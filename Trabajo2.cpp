@@ -49,29 +49,48 @@ int tamanio(char array[])
     return cont;
 }
 
+//pregunta 4 concatenar
+char strcat(char *a,char *b ){
+    char *ptr=a;
+    char *ptr1=b;
+    int c=0;
+    for (int i=0;*(ptr+i)!='\0';i++){
+        c=i+1;
+    }
+    for(int e=0;*(ptr1+e)!='\0';e++){
+        *(ptr+e+c)=*(ptr1+e);
+}
+}
+
 int main()
 {
-pregunta 1
-iterativa
-    int arr[]={1,2,3,4,5,6,7};
-  cout<<"La suma es: "<<suma(arr,7)<<endl;
-    return 0;
-    //recursiva
+//pregunta 1
+//iterativa
+//    int arr[]={1,2,3,4,5,6,7};
+//  cout<<"La suma es: "<<suma(arr,7)<<endl;
+//    return 0;
+//    //recursiva
+//
+//    int array[]={1,2,3,4,5,6,7};
+//    cout<<sumaRecursiva(array,7);
+//    //pregunta2
+//   int array[]={1,2,3,4,5};
+//    invertir(5,array);
+//    for(int i=0;i<5;i++){
+//       cout<<array[i]<<" ";
+//       }
+//   return 0;
+//
+//    //pregunta 3
+//
+//
+//    cout<< tamanio("iangabo");
 
-    int array[]={1,2,3,4,5,6,7};
-    cout<<sumaRecursiva(array,7);
-    //pregunta2
-   int array[]={1,2,3,4,5};
-    invertir(5,array);
-    for(int i=0;i<5;i++){
-       cout<<array[i]<<" ";
-       }
-   return 0;
+    //pregunta 4
 
-    //pregunta 3
-
-
-    cout<< tamanio("iangabo");
+    char arr[20]="Hola";
+    char arr1[20]="Amigo";
+    strcat(arr,arr1);
 
 
 }
