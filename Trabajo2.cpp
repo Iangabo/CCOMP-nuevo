@@ -91,6 +91,8 @@ int main()
     char arr[20]="Hola";
     char arr1[20]="Amigo";
     strcat(arr,arr1);
+    cout<<arr;
+
 
 
 }
