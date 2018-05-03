@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+//1. Escriba una funcion que reciba como paramtro una cadena la cual sera un numero en notacion cientifica y retorne el numero en si
+void notacion_cientifica(char a[], int largo)
+{
+    int num=0;
+    for(int i=0;i<largo;i++){
+        num=i-'0';
+        cout<<a[i];
+    }
+
+
+
+}
+
+
+int main()
+{
+    char arr[]={'1','.','2','2','2','e','-','3'};
+    notacion_cientifica(arr,8);
+
+
+    /*
+    int valor1=3e3;
+    double valor2=5.3e3;
+    double valor3=1.222e-3;
+    cout<<valor1<<endl;
+    cout<<valor2<<endl;
+    cout<<valor3<<endl;
+    */
+}
+//2. USANDO SOLO PUNTEROS Escriba una funcion llamada substring(s,t) donde sy t son 2 cadenas de string que retorne 1 si la cadena t es subcadena de la cadena s y cero en caso contrario
