@@ -1,0 +1,15 @@
+#ifndef CURSO_H
+#define CURSO_H
+#include<string>
+using namespace std;
+
+
+class Curso
+{
+    public:
+        string nombre;
+        int promedio;
+
+};
+
+#endif // CURSO_H
