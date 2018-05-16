@@ -20,19 +20,6 @@ int main()
     cursos[5].nombre="Persona";
     cursos[5].promedio=20;
     //Imprimir
-    cout<<cursos[0].nombre<<endl;
-    cout<<cursos[0].promedio<<endl;
-    cout<<cursos[1].nombre<<endl;
-    cout<<cursos[1].promedio<<endl;
-    cout<<cursos[2].nombre<<endl;
-    cout<<cursos[2].promedio<<endl;
-    cout<<cursos[3].nombre<<endl;
-    cout<<cursos[3].promedio<<endl;
-    cout<<cursos[4].nombre<<endl;
-    cout<<cursos[4].promedio<<endl;
-    cout<<cursos[5].nombre<<endl;
-    cout<<cursos[5].promedio<<endl;
-
     int TAM=6;
 
     for (int i=1; i<TAM; i++){
@@ -44,7 +31,7 @@ int main()
                     }
           }
 }
-
+    cout<<""<<endl;
     cout<<"ORDENADO"<<endl;
     cout<<""<<endl;
 
@@ -60,5 +47,18 @@ int main()
     cout<<cursos[4].promedio<<endl;
     cout<<cursos[5].nombre<<endl;
     cout<<cursos[5].promedio<<endl;
+
+
+    curso c("CCOMP",7);
+
+    curso arreglo[]={curso("ICC",7),curso(17,"Mate")};
+
+    cout << c.obtenerInfo() << endl;
+    cout << arreglo[0].nombre << endl;
+    cout << arreglo[1].nombre << endl;
+
+
+
+
 
 }
